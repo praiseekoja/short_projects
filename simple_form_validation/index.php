@@ -2,7 +2,15 @@
 // password strength requirements, etc.
 <?php
 if(isset($_POST['submit'])){
-    
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
+    $password=$_POST['password'];
+    $c_password=$_POST['c_password'];
+    if(empty($name||$email||$phone||$password||$c_password)){
+        echo"fill all input fields";
+
+    }
 
 }
 
@@ -22,7 +30,7 @@ if(isset($_POST['submit'])){
         <input type="email" name="email">
         <input type="phone" name="phone">
         <input type="password" name="password">
-        <input type="password" name="confirm_password">
+        <input type="password" name="c_password">
         <input type="submit" value="submit">
 
     </form>
