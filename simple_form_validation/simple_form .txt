@@ -1,3 +1,6 @@
+//Implement custom validation rules such as uniqueness checks for email/username,
+// password strength requirements, etc.
+
 what kind of validation do i want this form to perform?
 ~check if the fields are empty
 ~password lengths
